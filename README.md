@@ -46,7 +46,7 @@ playwright install
 source .venv/bin/activate
 
 - Rodar o sricpt do scraper:
-python scripts/run_scraper.py
+python -m scripts.run_scraper
 
 ### Executar testes
 

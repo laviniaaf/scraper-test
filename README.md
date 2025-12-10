@@ -72,9 +72,3 @@ Salvos em `screenshots/produto_YYYYMMDD_HHMMSS.png`
 - **Python 3.12** - Linguagem principal
 - **pytest** - Framework de testes
 
-## Observações
-
-- O scraper acessa apenas dados públicos da Shopee
-- Screenshots salvos em resolução completa
-- Produto é escolhido aleatoriamente da página da loja
-- Navegador permanece visível durante execução (headless=False)

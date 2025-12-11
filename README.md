@@ -42,11 +42,29 @@ playwright install
 
 ## Como usar
 
+### Opção 1: Localmente
+
 - Abrir o ambiente virtual:
 source .venv/bin/activate
 
 - Rodar o sricpt do scraper:
 python -m scripts.run_scraper
+
+### Opção 2: Com Docker
+
+```bash
+# Build e rodar
+docker-compose up --build
+
+# Rodar em background
+docker-compose up -d
+
+# Ver logs
+docker-compose logs -f scraper
+
+# Parar
+docker-compose down
+```
 
 ### Executar testes
 

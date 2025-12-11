@@ -225,7 +225,7 @@ class ShopeeScraper:
         7. Salva dados em CSV
         """
         with sync_playwright() as p:
-            browser = p.firefox.launch(headless=True, slow_mo=50, proxy=self.proxy) if self.proxy else p.firefox.launch(headless=False, slow_mo=50)
+            browser = p.firefox.launch(headless=True, slow_mo=50, proxy=self.proxy) if self.proxy else p.firefox.launch(headless=True, slow_mo=50)
             
             # contexto do navegador para Argentina
             context_args = dict(

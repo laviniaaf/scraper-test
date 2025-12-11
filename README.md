@@ -71,9 +71,6 @@ docker-compose down
 ```bash
 # Testes unitários
 pytest tests/test_shopee_scraper.py -v
-
-# Com cobertura
-pytest tests/test_shopee_scraper.py --cov=scraper --cov-report=html
 ```
 
 ## Saída

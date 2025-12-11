@@ -44,5 +44,5 @@ COPY . .
 # Criar diretório para screenshots
 RUN mkdir -p screenshots
 
-# rodar o scraper do Mercado Livre
-CMD ["python", "-m", "scripts.run_scraper_ml"]
+# rodar o scraper da Shopee
+CMD ["python", "-m", "scripts.run_scraper"]

@@ -3,20 +3,20 @@ version: '3.8'
 services:
   scraper:
     build: .
-    container_name: ml-scraper
+    container_name: shopee-scraper
     volumes:
       # Persistir screenshots no host
       - ./screenshots:/app/screenshots
       # Persistir CSV de produtos no host
       - ./produtos.csv:/app/produtos.csv
-    command: python -m scripts.run_scraper_ml
+    command: python -m scripts.run_scraper
     # Restart automático em caso de falha
     restart: unless-stopped
     
   # rodar testes
   tests:
     build: .
-    container_name: ml-scraper-tests
+    container_name: shopee-scraper-tests
     volumes:
       - .:/app
     command: pytest tests/ -v
